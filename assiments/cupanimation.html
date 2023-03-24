@@ -4,116 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cupanimation</title>
+    <title>Bdaycard</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body{
-            background-color: aqua;
+            margin: 0%;
+            padding: 0%;
         }
-        .one{
+        .bodyy{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            box-shadow: 3px 3px 2px ;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            background-color: whitesmoke;
+            height: 400px;
+            align-items: center;
+            border-radius: 3% ;
+            position: relative;
+            transition: 2s;
+        }
+        .imagediv{
+            display: inline;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: white;
-            animation-name: steam;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            transition:transform 1s ease-in-out 0s;
         }
-        .two{
+        .container:hover img{
+            transform: rotatey(-180deg);
+        }
+        .container:hover{
+            /* transform: rotate(-10deg);        nt wrk 2gther */
+            transform: translateX(150px);  
+        }
+        .imagediv img{
+            box-shadow: 3px 3px 2px ;
+            height: 400px;
+            width: 300px;
+            border-radius: 3%;
+            transform-origin: left;
+            object-fit: fill;
+            transition: 1s; 
+        }
+        .textdev #text{
+            /* border: 2px solid red; */
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            letter-spacing: .6em;
+            margin-left: 30px;
+            text-transform: capitalize;
+        }
+        span{
+            color: red;
+        }
+        .bles{
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: white;
-            animation-name: steama;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            transition:transform 1s ease-in-out 0s;
+            bottom: 0px;
+            font-size: 20px;
+            color: white;
+            /* background-color: black; */
+            width: 100vw;
         }
-        .three{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: white;
-            animation-name: steamb;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            transition:transform 1s ease-in-out 0s;
-        }
-        @keyframes steam {
-            0% {top: 35%;}
-            25% {top: 18%; left: 45%; opacity: 0.8;}
-            50% {top: 15%; left: 53%; opacity: 0.5;}
-            75% {top: 10%; opacity: 0.3;}
-            100% {top: 5%; opacity: 0.2;}
-        }
-        @keyframes steama {
-            0% {top: 35%; left: 47%; }
-            25% {top: 21%; left: 50%; opacity: 0.6;}
-            50% {top: 15%; left: 55%; opacity: 0.5;}
-            75% {top: 10%; left: 50%; opacity: 0.3;}
-            100% {top: 5%;left: 55%; opacity: 0;}
-        }
-        @keyframes steamb {
-            0% {top: 35%;}
-            25% {top: 20%; left: 55%; opacity: 0.6;}
-            50% {top: 15%; left: 50%; opacity: 0.4;}
-            75% {top: 10%; left: 55%; opacity: 0.2;}
-            100% {top: 5%; left: 50%; opacity: 0;}
-        }
-        img{
-            position: absolute;
-            top: -80%;
-            left: -10%;
-            transform: scale(0.3);
+        .bles h4{
+            left: 42.5%;
+            position: relative;
             
-        }
-        h1{
-            position: absolute;
-            left: 51.5%;
-            top: 55%;
-            letter-spacing: 0.2em;
-            text-shadow: 3px 3px  rgb(217, 207, 15);
-        }
-        #m{
-            position: absolute;
-            left: 51.5%;
-            top: 61%;
-            letter-spacing: 0.2em;
-            text-shadow: 3px 3px  rgb(217, 207, 15);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="animation one">
-            
+
+    <div class="bodyy">
+        <div class="container">
+            <div class="imagediv">
+                <img src="890f92383e257fed17a0358242ffdf5f.jpg" alt=" bdau girl image">
+            </div>
+            <div class="textdev">
+                <h2 id="text"> <span>happy birthday</span> <br> two you baby ❤</h2>
+            </div>
         </div>
-        <div class="animation two">
-            
+        <div class="bles">
+            <h4>developed by fluvinu with ❤</h4>
         </div>
-        <div class="animation three">
-            
-        </div>
-             <img src="image\new—Pngtree—cartoon white cup download_4486738.png" alt="cup image">
-        
-            
-            <!-- <h1>G</h1>
-          
-            <h1 id="m">M</h1> -->
-        
 
     </div>
+
+
 </body>
 </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cup animation</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    .maincon{
+        background-color: aqua;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        position: absolute;
+        height: 300px;
+        width: 350px;
+        background-color: white;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        box-shadow: 2px 3px 3px;
+    }
+    .hendle{
+        position: absolute;
+        border: 20px solid white;
+        border-radius: 30%;
+        height: 100px;
+        width: 70px;
+        left: 60.5%;
+        bottom: 43%;
+        box-shadow: 3px 2px 3px;
+    }
+    .one{
+        position: relative;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 50%;
+        border: 3px solid white;
+        animation-name: steamer1;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        box-shadow: 2px 3px 3px;
+    }
+    .two{
+        position: relative;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 50%;
+        border: 3px solid white;
+        animation-name: steamer2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        box-shadow: 2px 3px 3px;
+    }
+    .three{
+        position: relative;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 50%;
+        border: 3px solid white;
+        animation-name: steamer3;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        box-shadow: 2px 3px 3px;
+    }
+    
+
+    @keyframes steamer1{
+        0%{bottom: 10%;  opacity: 1; height: 55px; width: 55px;} 
+        25%{bottom: 20%;  opacity: 0.8; height: 65px; width: 65px;}
+        50%{bottom: 35%; opacity: 0.6; height: 75px; width: 75px;}
+        75%{bottom: 40%; opacity: 0.4; height: 85px; width: 85px;}
+        100%{bottom: 50%; opacity: 0.1; height: 95px; width: 95px;}
+    }
+    @keyframes steamer2{
+        0%{bottom: 10%;  opacity: 1; height: 55px; width: 55px;} 
+        25%{bottom: 20%; opacity: 0.8; height: 65px; width: 65px;}
+        50%{bottom: 35%; opacity: 0.6; height: 75px; width: 75px;}
+        75%{bottom: 40%; opacity: 0.4; height: 85px; width: 85px;}
+        100%{bottom: 50%; opacity: 0.1; height: 95px; width: 95px;}
+    }
+    @keyframes steamer3{
+        0%{bottom: 10%;  opacity: 1; height: 55px; width: 55px;} 
+        25%{bottom: 20%; opacity: 0.8; height: 65px; width: 65px;}
+        50%{bottom: 35%; opacity: 0.6; height: 75px; width: 75px;}
+        75%{bottom: 40%; opacity: 0.4; height: 85px; width: 85px;}
+        100%{bottom: 50%; opacity: 0.1; height: 95px; width: 95px;}
+    }
+    .bless{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        position: absolute;
+        font-size: 20px;
+        bottom: 3%;
+        background-color: white;
+        width: 100vw;
+    }
+
+</style>
+<body>
+    <div class="maincon">
+        <div class="steam one">
+            
+        </div>
+        <div class="steam two">
+            
+        </div>
+        <div class="steam three">
+           
+        </div>
+        <div class="container">
+           
+        </div>
+        <div class="hendle">
+           
+        </div>
+
+        <div class="bless">
+            devloped by fluvinu with ❤
+        </div>
+    </div>
+</body>
+</html>
